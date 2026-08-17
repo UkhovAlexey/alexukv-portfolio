@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:chrome": "vite & sleep 1 && open -na \"Google Chrome\" --args --incognito http://localhost:5173 && wait",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
